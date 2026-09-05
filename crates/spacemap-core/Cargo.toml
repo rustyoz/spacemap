@@ -1,0 +1,18 @@
+[package]
+name = "spacemap-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Disk discovery, scanning, and treemap layout for Spacemap"
+
+[dependencies]
+anyhow.workspace = true
+bincode.workspace = true
+dirs.workspace = true
+libc.workspace = true
+notify.workspace = true
+parking_lot.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+walkdir.workspace = true

@@ -1,0 +1,11 @@
+[Unit]
+Description=Spacemap disk usage scanner
+After=default.target
+
+[Service]
+ExecStart=%h/.cargo/bin/spacemapd
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = ["crates/spacemap-core", "crates/spacemapd", "crates/spacemap"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Live disk usage map for Linux"
+
+[workspace.dependencies]
+spacemap-core = { path = "crates/spacemap-core" }
+anyhow = "1"
+bincode = "1"
+ctrlc = "3"
+clap = { version = "4", features = ["derive"] }
+dirs = "6"
+libc = "0.2"
+notify = "7"
+parking_lot = "0.12"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+walkdir = "2"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

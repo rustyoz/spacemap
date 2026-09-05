@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Spacemap
+Comment=Live disk usage map
+Exec=spacemap
+Icon=drive-harddisk
+Terminal=false
+Type=Application
+Categories=Utility;Filesystem;Monitor;
+Keywords=disk;usage;windirstat;qdirstat;
